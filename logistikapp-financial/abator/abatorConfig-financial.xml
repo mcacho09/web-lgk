@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE abatorConfiguration PUBLIC "-//Apache Software Foundation//DTD Abator for iBATIS Configuration 1.0//EN"
+  "http://ibatis.apache.org/dtd/abator-config_1_0.dtd">
+
+<abatorConfiguration>
+
+	<abatorContext generatorSet="Java5">
+	
+         <jdbcConnection driverClass="org.postgresql.Driver"
+	                        connectionURL="jdbc:postgresql://localhost:5432/logistikapp"
+	                        userId="postgres"
+                            password="kz8WmkTHFG">
+			<classPathEntry location="\WEB-INF\lib\postgresql-9.1-903.jdbc4.jar" />
+		</jdbcConnection>
+
+        <javaTypeResolver >
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+
+	    <javaModelGenerator targetPackage="domain" targetProject="logistikapp-financial/abator" />
+	
+	    <sqlMapGenerator targetPackage="maps" targetProject="logistikapp-financial/abator" />
+	    
+	    <daoGenerator type="SPRING" targetPackage="dao" targetProject="logistikapp-financial/abator">
+            <property name="enableSubPackages" value="false" />
+	    </daoGenerator>
+
+
+        <table schema="" tableName="lgk_order_detail" domainObjectName="OrderDetail"
+               enableInsert="true" enableSelectByPrimaryKey="true" enableSelectByExample="true" enableUpdateByPrimaryKey="true" enableDeleteByPrimaryKey="true" 
+               enableDeleteByExample="false" enableUpdateByExample="false" selectByPrimaryKeyQueryId="false" selectByExampleQueryId="false">
+        
+            <generatedKey column="id_order_detail" sqlStatement="SELECT LASTVAL()" identity="true"/>
+        
+            <columnOverride column="id_order_detail"	property="id_order_detail" 	javaType="Long"		jdbcType="SERIAL"/>
+            <columnOverride column="id_order" 			property="id_order" 		javaType="Long" 	jdbcType="INTEGER"/>
+            <columnOverride column="id_product" 		property="id_product" 		javaType="Long" 	jdbcType="INTEGER"/>
+            <columnOverride column="price_sug" 			property="price_sug" 		javaType="Double" 	jdbcType="NUMERIC"/>
+            <columnOverride column="price_sale"			property="price_sale" 		javaType="Double" 	jdbcType="NUMERIC"/>
+            <columnOverride column="quantity" 			property="quantity" 		javaType="Integer" 	jdbcType="INTEGER"/>
+            <columnOverride column="cost"				property="cost"				javaType="Double"	jdbcType="NUMERIC"/>
+            <columnOverride column="typetrx"			property="typetrx"			javaType="String" 	jdbcType="VARCHAR"/>
+            <columnOverride column="product_type"		property="product_type"		javaType="String" 	jdbcType="String"/>
+            <columnOverride column="tax" 				property="tax" 				javaType="Integer" 	jdbcType="INTEGER"/>
+        </table>
+
+        
+	</abatorContext>
+  
+</abatorConfiguration>

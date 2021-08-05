@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/user/Documents/lgk-project/web-master/logistikapp/WebContent/WEB-INF/lib/axis.jar"/>
+	<classpathentry kind="lib" path="C:/Users/user/Documents/lgk-project/web-master/logistikapp/WebContent/WEB-INF/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/user/Documents/lgk-project/web-master/logistikapp/WebContent/WEB-INF/lib/mail-1.4.jar"/>
+	<classpathentry kind="lib" path="/logistikapp/WebContent/WEB-INF/lib/acegi-security-1.0.2.jar"/>
+	<classpathentry kind="lib" path="/logistikapp/WebContent/WEB-INF/lib/aspectjweaver.jar"/>
+	<classpathentry kind="lib" path="/logistikapp/WebContent/WEB-INF/lib/commons-dbcp.jar"/>
+	<classpathentry kind="lib" path="/logistikapp/WebContent/WEB-INF/lib/commons-pool.jar"/>
+	<classpathentry kind="lib" path="/logistikapp/WebContent/WEB-INF/lib/ibatis-2.3.4.726.jar"/>
+	<classpathentry kind="lib" path="/logistikapp/WebContent/WEB-INF/lib/junit-4.4.jar"/>
+	<classpathentry kind="lib" path="/logistikapp/WebContent/WEB-INF/lib/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="/logistikapp/WebContent/WEB-INF/lib/postgresql-9.1-903.jdbc4.jar"/>
+	<classpathentry kind="lib" path="/logistikapp/WebContent/WEB-INF/lib/spring.jar" sourcepath="/logistikapp-user"/>
+	<classpathentry kind="lib" path="/logistikapp/WebContent/WEB-INF/lib/spring-test.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
