@@ -14,7 +14,7 @@
             <classPathEntry location="/Users/jorge/Documents/projects/logistikapp/dev/lgk-v1/logistikapp/WebContent/WEB-INF/lib/postgresql-9.1-903.jdbc4.jar" />
 -->
          <jdbcConnection driverClass="org.postgresql.Driver"
-	                        connectionURL="jdbc:postgresql://174.142.6.164:5432/logistikapp"
+	                        connectionURL="jdbc:postgresql://localhost:5432/logistikapp"
 	                        userId="postgres"
                             password="kz8WmkTHFG">
 			<classPathEntry location="\WEB-INF\lib\postgresql-9.1-903.jdbc4.jar" />
